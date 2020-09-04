@@ -4,22 +4,25 @@ import styles from '../styles/Home.module.scss';
 export default function Home() {
 	return (
 		<div className={styles.container}>
-			<nav className={styles.nav}>
-				<img className={styles['nav-logo']} src="/gjs_logo_web.svg" />
-			</nav>
 			<Head>
 				<title>Groove Juice Swings</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className={styles.main}>
-				<h1 className={styles.title}>
-					Spreading the job of Lindy Hop and <i>swing dancing</i> in Rochester.
-				</h1>
+			<nav className={styles.nav}>
+				<img className={styles['nav-logo']} src="/gjs_logo_web.svg" />
+				<a className={styles['nav-item']}>News</a>
+				<a className={styles['nav-item']}>Classes</a>
+				<a className={styles['nav-item']}>Events</a>
+				<a className={styles['nav-item']}>Staff</a>
+			</nav>
 
-				<p className={styles.description}>
-					Get started by editing <code className={styles.code}>pages/index.js</code>
-				</p>
+			<main className={styles.main}>
+				<section class={styles['banner']}>
+					<h1 className={styles.title}>
+						Spreading the job of Lindy Hop and <i>swing dancing</i> in Rochester.
+					</h1>
+				</section>
 
 				<div className={styles.grid}>
 					<a href="https://nextjs.org/docs" className={styles.card}>
