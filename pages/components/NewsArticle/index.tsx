@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 export interface NewsArticleProps {
-	title?: string;
+	title: string;
 	subTitle?: string;
 	date?: string;
 	content?: string;
