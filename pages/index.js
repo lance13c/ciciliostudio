@@ -1,10 +1,43 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import Link from 'next/link';
+import {
+	Title,
+	BannerContent,
+	MainBackground,
+	MainBackgroundOverlay,
+	Main,
+	Nav,
+	NavLink,
+	GrooveNavLogo
+} from './styled';
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import GrooveJuiceBannerLogo from './components/GrooveJuiceBannerLogo';
 
 export default function Home() {
-  return <Title>My page</Title>
+	return (
+		<Main>
+			<MainBackground />
+			<MainBackgroundOverlay />
+			{/* <Nav>
+				<GrooveNavLogo>
+					<ReactSVG src="/gjs_logo_web.svg" />
+				</GrooveNavLogo>
+				<Link href="/">
+					<NavLink>Classes</NavLink>
+				</Link>
+				<Link href="/">
+					<NavLink>Classes</NavLink>
+				</Link>
+				<Link href="/">
+					<NavLink>Classes</NavLink>
+				</Link>
+				<Link href="/">
+					<NavLink>Staff</NavLink>
+				</Link>
+			</Nav> */}
+			<BannerContent>
+				<GrooveJuiceBannerLogo />
+			</BannerContent>
+		</Main>
+	);
 }
