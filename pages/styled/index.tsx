@@ -6,10 +6,26 @@ export const Title = styled.h1`
 	color: ${({ theme }) => theme.colors.primary};
 `;
 
+export const ContentSection = styled.section`
+	height: 400px;
+	width: 100%;
+	background: #fffffa;
+	position: relative;
+	z-index: 3;
+`;
+
+export const TransitionOverlay = styled.div`
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, transparent, transparent, transparent, transparent, black);
+	top: 10px;
+`;
+
 export const BannerContent = styled.div`
 	width: 100%;
 	height: 100%;
-	padding: 30px 0 0 0;
+	padding: 30px 25px 0 0;
 	display: flex;
 	justify-content: center;
 	position: relative;
@@ -43,10 +59,25 @@ export const BannerContent = styled.div`
 	}
 `;
 
+export const MainSection = styled.section`
+	width: 100%;
+	height: 100vh;
+	display: flex;
+
+	background-color: ${({ theme }) => theme.colors.background};
+
+	background-repeat: no-repeat;
+	background-image: url("/main_background.jpg");
+	background-blend-mode: luminosity;
+	background-size: cover;
+	background-position: center 10%;
+	position: relative;
+`;
+
 export const Main = styled.main`
 	width: 100%;
 	height: 100%;
-	display: flex;
+	background: black;
 `;
 
 export const MainBackground = styled.div`
@@ -55,13 +86,6 @@ export const MainBackground = styled.div`
 	height: 100%;
 	z-index: 1;
 	/* background-image: url("/charleston.jpg"); */
-	background-color: ${({ theme }) => theme.colors.background};
-
-	background-repeat: no-repeat;
-	background-image: url("/main_background.jpg");
-	background-blend-mode: luminosity;
-	background-size: cover;
-	background-position: center 10%;
 `;
 
 export const MainBackgroundOverlay = styled.div`

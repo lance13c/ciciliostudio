@@ -6,9 +6,12 @@ import {
 	MainBackground,
 	MainBackgroundOverlay,
 	Main,
+	MainSection,
 	Nav,
 	NavLink,
-	GrooveNavLogo
+	GrooveNavLogo,
+	TransitionOverlay,
+	ContentSection
 } from './styled';
 
 import GrooveJuiceBannerLogo from './components/GrooveJuiceBannerLogo';
@@ -16,9 +19,9 @@ import GrooveJuiceBannerLogo from './components/GrooveJuiceBannerLogo';
 export default function Home() {
 	return (
 		<Main>
-			<MainBackground />
-			<MainBackgroundOverlay />
-			{/* <Nav>
+			<MainSection>
+				<MainBackgroundOverlay />
+				{/* <Nav>
 				<GrooveNavLogo>
 					<ReactSVG src="/gjs_logo_web.svg" />
 				</GrooveNavLogo>
@@ -35,9 +38,12 @@ export default function Home() {
 					<NavLink>Staff</NavLink>
 				</Link>
 			</Nav> */}
-			<BannerContent>
-				<GrooveJuiceBannerLogo />
-			</BannerContent>
+				<BannerContent>
+					<GrooveJuiceBannerLogo />
+				</BannerContent>
+				<TransitionOverlay />
+			</MainSection>
+			<ContentSection />
 		</Main>
 	);
 }

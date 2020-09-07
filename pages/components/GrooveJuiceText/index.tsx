@@ -5,8 +5,8 @@ export interface GrooveJuiceTextProps {}
 
 const ContentContainer = styled.div`
 	position: absolute;
-	left: 6%;
-	top: 12%;
+	left: 18px;
+	top: 18px;
 `;
 
 const TextContainer = styled.div`
