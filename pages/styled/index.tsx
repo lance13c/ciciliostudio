@@ -100,26 +100,29 @@ export const MainBackgroundOverlay = styled.div`
 `;
 
 export const Nav = styled.nav`
-	padding: 0 2rem;
+	padding: 0 0rem;
 	position: absolute;
 	left: 0;
-	top: 0;
-	height: 60px;
-	width: 100%;
+	top: 10%;
+	height: 100%;
+	width: 300px;
 	display: flex;
+	flex-direction: column;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-start;
+	z-index: 3;
 `;
 
 export const NavLink = styled.a`
+	font-family: 'Orwell', sans-serif;
 	height: 100%;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0 1rem;
-	font-size: 1.5rem;
+	padding: 1rem .4rem;
+	font-size: 1.2rem;
 	font-weight: 400;
-	color: ${({ theme }) => theme.colors.secondary};
+	color: ${({ theme }) => theme.colors.text};
 	list-style-type: none;
 	flex-basis: .8rem;
 	text-decoration: none;

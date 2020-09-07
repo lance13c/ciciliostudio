@@ -21,23 +21,20 @@ export default function Home() {
 		<Main>
 			<MainSection>
 				<MainBackgroundOverlay />
-				{/* <Nav>
-				<GrooveNavLogo>
-					<ReactSVG src="/gjs_logo_web.svg" />
-				</GrooveNavLogo>
-				<Link href="/">
-					<NavLink>Classes</NavLink>
-				</Link>
-				<Link href="/">
-					<NavLink>Classes</NavLink>
-				</Link>
-				<Link href="/">
-					<NavLink>Classes</NavLink>
-				</Link>
-				<Link href="/">
-					<NavLink>Staff</NavLink>
-				</Link>
-			</Nav> */}
+				<Nav>
+					<Link href="/">
+						<NavLink>News</NavLink>
+					</Link>
+					<Link href="/">
+						<NavLink>Classes</NavLink>
+					</Link>
+					<Link href="/">
+						<NavLink>Events</NavLink>
+					</Link>
+					<Link href="/">
+						<NavLink>Staff</NavLink>
+					</Link>
+				</Nav>
 				<BannerContent>
 					<GrooveJuiceBannerLogo />
 				</BannerContent>
