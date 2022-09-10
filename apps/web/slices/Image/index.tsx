@@ -1,13 +1,13 @@
 import * as prismicH from '@prismicio/helpers';
 import { PrismicNextImage } from '@prismicio/next';
-import { Slice } from '@prismicio/types';
 import clsx from 'clsx';
 import React from 'react';
 
 import { Bounded } from '../../components/Bounded';
+import { ImageSlice } from '../../types.generated';
 
 interface Bounded {
-  slice: Slice;
+  slice: ImageSlice;
   index: number;
 }
 
